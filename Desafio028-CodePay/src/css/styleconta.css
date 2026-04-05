@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --brand-color: #2fbd6a;
+
+    --dark-10: #2d3748;
+    --dark-20: #718096;
+
+    --white-10: #e7e7e7;
+    --white-20: #ffffff;
+
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-400: #9ca3af;
+    --gray-700: #374151;
+    --white: #ffffff;
+    --radius: 4px;
+    --transition: 0.2s ease-in-out;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--white-20);
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background: var(--white);
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.navbar__desktop__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__desktop__menu a {
+    color: var(--gray-700);
+    transition: var(--transition);
+}
+
+.navbar__desktop__menu a:hover {
+    color: var(--primary);
+}
+
+.navbar__action {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar__action img {
+    height: 24px;
+    width: 24px;
+}
+
+.account-btn,
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.checkout {
+    /* background: #0000004f; */
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.checkout-steps {
+    /* background: #148720ca; */
+    border-radius: var(--radius);
+    gap: 2rem;
+    height: fit-content;
+    padding: 0.2rem;
+    margin-left: -6px;
+    width: 497px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    color: var(--dark-20);
+}
+
+.steps img {
+    height: 20px;
+    width: 20px;
+}
+
+.steps__item {
+    /* background: #bf1717d9; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2D3748;
+    height: 24px;
+    width: 160px;
+}
+
+.carteira {
+    height: 22px;
+    width: 126px;
+}
+
+.steps .traco::before {
+
+    display: block;
+    border: 1px solid #ca3f2cd0;
+    height: 0;
+    width: 12px;
+}
+
+.steps__item--active {
+    color: var(--brand-color);
+}
+
+
+
+.checkout__content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+    height: 547px;
+    margin-top: 70px;
+    margin-left: -260px;
+    width: 1, 212px;
+}
+
+.account-details {
+    /* background: blueviolet; */
+    padding: 2rem .1rem;
+    border-radius: var(--radius);
+    width: 623px;
+    height: 518px;
+}
+
+.page-title {
+    margin: -1.8rem 0 1.8rem 0;
+}
+
+.traco-bottom {
+    display: flex;
+    border-bottom: 1px solid var(--gray-200);
+    width: 620px;
+    padding: 25px 0 0 0;
+    margin-bottom: 35px;
+}
+
+.form__group {
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.form__group label {
+    margin-bottom: 0.9rem;
+}
+
+.form__group input {
+    background: #F3EFEF;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: none;
+    transition: var(--transition);
+}
+
+.form__group input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form__hint {
+    color: var(--gray-400);
+    margin-top: 0.4rem;
+}
+
+.form__actions {
+    /* background: #000; */
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    border: none;
+    transition: var(--transition);
+   
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    background: var(--gray-200);
+}
+
+.btn-secondary:hover {
+    background: var(--gray-400);
+}
+
+.btn-ghost {
+    background: var(--brand-color);
+    border: none;
+}
+
+.order-summary {
+    /* background: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+    border-radius: var(--radius);
+    height: 547px;
+    margin-left: -145px;
+    width: 484px;
+}
+
+.order-summary__title {
+    margin-bottom: 1.6rem;
+}
+
+.order-summary__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.order-summary__image {
+    width: 484px;
+    border-radius: var(--radius);
+    height: 150px;
+}
+
+.order-summary__details {
+    flex: 1;
+}
+
+.order-summary__product {
+    margin-bottom: 0.5rem;
+}
+
+.order-summary__price {
+    align-items: center;
+    display: flex;
+}
+
+.quantity-control {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.quantity-control__btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #F9F9F9;
+    background: none;
+    color: #718096;
+}
+
+.control-btn {
+    color: var(--white);
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    width: 116px;
+}
+
+.coupon {
+    margin-bottom: 0.5rem;
+}
+
+.coupon label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.coupon__field {
+    display: flex;
+    gap: 0.5rem;    
+    justify-content: space-between;
+}
+
+.coupon__field input {
+    display: flex;
+    background: var(--gray-200);
+    padding: 0.6rem;
+    border-radius: var(--radius);
+    border: none;
+    width: 320px;
+}
+
+.btn--secondary {
+    border-radius: 4px;
+    border: 2px solid var(--brand-color);
+    color: var(--brand-color);
+}
+
+.prices-table {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    height: 132px;
+    width: 484px;
+}
+
+.price-table__row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price-table__row--total {
+    /* border-top: 1px solid var(--gray-200); */
+    padding-top: 0.1rem;
+}

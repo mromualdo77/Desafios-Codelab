@@ -1,0 +1,92 @@
+@media (max-width: 1024px) {
+    .about-jordan {
+        max-width: 500px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .jordan-info .tagline {
+        font-size: 1.6rem;
+    }
+
+    .jordan-info .jordan-history {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        margin: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-image {
+        min-height: 300px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about-jordan {
+        max-width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .jordan-info .tagline {
+        font-size: 1.4rem;
+    }
+
+    .jordan-info .jordan-history {
+        font-size: 0.95rem;
+    }
+
+    .section-heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-heading p {
+        font-size: 1rem;
+    }
+
+    .image-tenis {
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .top-fixed-jordan {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .hero-image {
+        min-height: 220px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .jordan-info .tagline {
+        font-size: 1.2rem;
+    }
+
+    .jordan-info .jordan-history {
+        font-size: 0.9rem;
+    }
+
+    .detalhes h3 {
+        font-size: 16px;
+    }
+
+    .detalhes p {
+        font-size: 14px;
+    }
+
+    .product-price {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+}

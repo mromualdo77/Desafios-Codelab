@@ -1,0 +1,107 @@
+body {
+    background: #121214;
+    min-height: 100vh;
+    overflow-X: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    background-color: #17171A;
+    border-bottom: 2px solid #252529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    color: #FFFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2rem;
+}
+
+.header span {
+    color: #E07B67;
+}
+
+.input-search {
+    background: #202024;
+    border: 2px solid #252529;
+    color: #AFABB6;
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cards .active,
+.cards .card {
+    border: 2px solid #252529;
+    border-radius: 8px;
+    padding: 20px;
+    background: #17171A;
+}
+
+.cards .active {
+    border-color: #E07B67;
+}
+
+.cards span {
+    display: block;
+    color: #E07B67;
+    margin-bottom: 8px;
+}
+
+.cards h2 {
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.cards p {
+    color: #AFABB6;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cards .fa-heart {
+    color: #e07b67;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -25px;
+}
+
+.cards h2 {
+    color: #fff;
+    font-family: Space, Grotesk;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.cards .informacoes {
+    padding-top: 25px;
+}
+
+.cards p {
+    color: #AFABB6;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 32px;
+
+}

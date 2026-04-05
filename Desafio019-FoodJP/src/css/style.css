@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --max-width: 1200px;
+
+    /* cores */
+    --brand-color: #ff0000;
+
+    --paper: #f8f5f2;
+
+    --white: #ffffff;
+
+    --text: #111214;
+    --muted: #66696b;
+    --brand: #d93f2b;
+
+    /*tom quente para CTA */
+    --brand-2: #996830;
+
+    /* cor estrela do layout */
+    --surface: #fafafa;
+    --accent: #ffb904;
+
+    /* tipografia */
+
+
+    /* espaçamentos */
+    --gap-xs: 8px;
+    --gap-sm: 12px;
+    --gap: 20px;
+    --gap-lg: 32px;
+    --radius-sm: 8px;
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(16, 16, 16, 0.08);
+
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 100%;
+}
+
+
+/* Containers */
+.header-container,
+.footer-container,
+.hero,
+.sobre,
+.populares,
+.comentarios {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* -------------------------Header ------------------------- */
+
+.header {
+    background: var(--surface);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding: 12px 0;
+}
+
+/*Logo*/
+.logo,
+.footer-logo {
+    height: auto;
+    width: 120px;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    color: var(--muted);
+    font-weight: 500;
+    padding: 0 8px;
+}
+
+.nav-list a:hover,
+.nav-lis a:focus {
+    color: var(--text);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* header button */
+.btn-download {
+    background: var(--brand);
+    border-radius: 50px;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 14px;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.btn-download:focus {
+    outline: 3px solid rgba(16, 9, 229, 0.3);
+    outline-offset: 3px;
+}
+
+/* -------------------------Hero (mobile first: stacked)------------------------- */
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-lg);
+    align-items: center;
+    padding: 34px 0;
+}
+
+.hero-content {
+    height: 298px;
+    width: 538px;
+}
+
+.hero-content h1 {
+    color: #232323;
+    font-family: "Koh Santepheap", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin: 0 0 8px 0;
+}
+
+.hero-content p {
+    color: var(--muted);
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    margin: 30px 0;
+}
+
+.button-primary {
+    background: var(--brand-color);
+    border: 2px solid var(--brand);
+    border-radius: 60px;
+    color: var(--white);
+    display: inline-block;
+    font-weight: 600;
+    margin: 40px 0 0 0;
+    padding: 10px 40px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+/* image visual treatment */
+.hero-image img {
+    height: auto;
+    object-fit: cover;
+    width: min(420px, 100%);
+}
+
+/* -------------------------
+   Sobre
+   ------------------------- */
+
+
+.sobre {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap-lg);
+    align-items: center;
+    padding: 54px 0;
+}
+
+.sobre-image img {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: 500px;
+    width: 592px;
+}
+
+.sobre-content {
+    height: 360px;
+    width: 552px;
+}
+
+.section-label {
+    color: var(--brand);
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Koh Santepheap", serif;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+}
+
+/* 'Feita de forma tradicional' */
+.sobre-content h2 {
+    color: var(--text);
+    font-size: 48px;
+    font-family: "Koh Santepheap", serif;
+    line-height: 120%;
+    margin: 6px 0 10px 0;
+}
+
+.sobre-content p {
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    height: 158px;
+    padding: 20px 0 0 0;
+    width: 520px;
+}
+
+/* -------------------------Populares (cards)------------------------- */
+
+.populares {
+    padding: 18px 0 0 0;
+}
+
+.populares h2 {
+    align-items: center;
+    color: var(--text);
+    display: flex;
+    font-family: 'Koh Santepheap', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    justify-content: center;
+    margin: 0 0 18px 0;
+}
+
+/* grid de cards */
+.cardapio-grid {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/* card */
+.card {
+    background: var(--paper);
+    border-radius: var(--radius);
+    /* padding: 1px; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 12px;
+    /* align-items: center; */
+    box-shadow: 0 6px 14px rgba(10, 10, 10, 0.04);
+    height: 434px;
+    margin: 96px 0 0 0;
+    width: 384px;
+}
+
+.card img {
+    /* border-radius: 10px; */
+    height: 300px;
+    margin-top: -96px;
+    margin-left: 50px;
+    /* object-fit: cover; */
+    width: 300px;
+}
+
+.infor-cardapio {
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-direction: column;
+    height: 184px;
+    gap: 10px;
+    margin-left: -270px;
+    margin-top: 240px;
+    width: 344px;
+}
+
+.card h3 {
+    align-items: center;
+    color: var(--text);
+    display: flex;
+    font-size: 24px;
+    font-family: 'Koh Santepheap', sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    height: 41px;
+    justify-content: center;
+    margin: 4px 0 0 -4px;
+    width: 262px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    height: 54px;
+    margin: 10px 0 8px 0;
+    padding: 6px;
+    width: 300px;
+}
+
+.infor-cardapio .price {
+    align-items: center;
+    display: flex;
+    font-family: 'Koh Santepheap', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    height: 41px;
+    color: var(--brand-color);
+    line-height: 100%;
+    padding: 6px;
+    width: 100px;
+}
+
+/* -------------------------Comentários------------------------- */
+.comentarios {
+    background: linear-gradient(185deg, #c7c1cf00, #616774);
+    /* background: var(--surface); */
+    margin-top: 130px;
+    height: 502px;
+    max-width: 100%;
+    width: 1202px;
+}
+
+.comentarios h2 {
+    align-items: center;
+    color: var(--text);
+    display: flex;
+    font-size: 48px;
+    font-family: 'Koh Santepheap', sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+    height: 58px;
+    justify-content: center;
+    margin: 15px auto;
+    width: 291px;
+}
+
+.comentario-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.perfil-usuario {
+    position: relative;
+
+    background: rgba(248, 242, 242, 0.099);
+    /* desfoque do fundo */
+    -webkit-backdrop-filter: blur(50%);
+    backdrop-filter: blur(50%);
+    /* borda clara */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+
+    /* sombra suave */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.068);
+
+    color: #ffffff1a;
+    align-items: flex-start;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 30px;
+    padding: 2rem;
+}
+
+.perfil-usuario::before {
+    border-radius: 24px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.05));
+    opacity: 0.89;
+    pointer-events: none;
+}
+
+.comentario-foto {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 52px;
+    object-fit: cover;
+    width: 52px;
+}
+
+.comentario-nome {
+    font: 400 32px/120% "Koh Santepheap", sans-serif;
+    color: #232323;
+    margin: 0 0 6px 0;
+}
+
+.comentario-texto {
+    font: 400 24px/160% "Poppins", sans-serif;
+    color: var(--muted);
+    margin: 0 0 8px 0;
+}
+
+/* estrelas */
+.film-rating img {
+    width: 18px;
+    height: 18px;
+    display: inline;
+    filter: none;
+}
+
+/* Footer */
+
+.footer {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px 20px;
+}
+
+.links-quadros {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 250px;
+}
+
+.footer-container {
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 18px;
+    color: #000;
+    padding: 35px 0 0 25px;
+    margin-top: 45px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-left: 2px;
+
+}
+
+.footer-links a {
+
+    color: var(--muted);
+    font-family: "Kon Santepheap", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 6px;
+}
+
+.footer-links a:focus {
+    outline: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    margin-left: 158px;
+    width: 1200px;
+}
+
+.linha::before {
+    border: 1px solid var(--paper);
+    content: "";
+    display: inline-block;
+    height: 0.94px;
+    max-width: 100%;
+    width: 1216px;
+    margin-left: 138px;
+}
+
+.redes-sociais {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 11px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container-center {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}

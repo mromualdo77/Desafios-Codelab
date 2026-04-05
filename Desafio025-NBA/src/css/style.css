@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --brand-color: #b52532;
+
+    --dark: #000000;
+
+    --white: #ffffff;
+}
+
+body {
+    background: #000000;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.pilot-header {
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -58.21%, #000000 109.71%), url(../image/wallpaper.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+.games {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+}
+
+.logo-nba {
+    margin-bottom: 50px;
+    width: 122px;
+    z-index: 10;
+}
+
+.game-score {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 240px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    height: 241px;
+    width: 124px;
+}
+
+.team img {
+    background: rgba(222, 211, 236, 1);
+    border-radius: 32px;
+    padding: 26px 5px;
+}
+
+.team .bulls {
+    background: rgba(236, 215, 211, 1);
+    height: 123px;
+}
+
+.team-name {
+    font: 600 32px/1 "Inter";
+    color: rgba(243, 242, 255, 1);
+
+}
+
+.team-percent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(243, 242, 255, 1);
+    border-radius: 50px;
+    gap: 12px;
+    height: 30px;
+    margin: 0 0 0 35px;
+    padding: 2px 16px;
+    width: 59px;
+}
+
+.team-name,
+.team-percent {
+    text-align: center;
+    display: inline-block;
+}
+
+.placar {
+    position: static;
+    margin-top: 32px;
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 32px;
+    background: linear-gradient(180deg, #c8232c, #a3171f);
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    padding: 12px 52px;
+    height: 40px;
+    margin-top: 0;
+    font: 600 16px "Inter";
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.placar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.placar:active {
+    transform: translateY(0);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pilot {
+    display: grid;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 28px;
+    max-width: 1296px;
+    width: 100%;
+}
+
+.games-today {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    height: 627px;
+    margin:0 auto;
+    max-width: 1210px;
+    width: 100%;
+}
+
+.game-card {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.description {
+    margin-top: 15px;
+}
+.header-game{
+     padding: 20px;
+    position: relative;
+}
+.header-game,
+.details {
+    width: 100%;
+}
+
+.header-game .content {
+    background: linear-gradient(120deg,
+            #5a2d82 0%,
+            #5a2d82 50%,
+            #fbbf24 50%,
+            #fbbf24 100%);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    gap: 22px;
+    height: 182px;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.header-game .segundo-container {
+    background: linear-gradient(120deg,
+            #008248 0%,
+            #008248 50%,
+            #f58426 50%,
+            #f58426 100%);
+}
+
+.game-label {
+    font: 600 18px/100% "Inter";
+    left: 50%;
+    letter-spacing: 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    top: 58px;
+}
+
+.timer-info {
+    font: 500 16px/100% "Inter";
+}
+
+.time-placar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.time-placar img {
+    width: 68px;
+}
+
+.timer-infor {
+    text-align: center;
+}
+
+.time.right span {
+    margin-left: 0;
+}
+
+.time-placar p {
+    margin-bottom: 4px;
+}
+
+.timer-placar strong {
+    font: 600 32px/100% "Inter";
+}
+
+.time span {
+    display: inline-block;
+    margin: 8px 0 0 20px;
+    font: 600 18px/100% "Inter";
+    text-align: center;
+    vertical-align: middle;
+}
+
+.details {
+    background: linear-gradient(180deg, #0e0e0e58 0%, #000000 100%);
+    height: 316px;
+    margin-top: 15px;
+    padding: 32px;
+}
+
+.stats-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.title,
+.stats-labels,
+.player-name {
+    font: 500 1.2rem/100% "Inter";
+    color: var(--white);
+}
+
+.stats-labels,
+.player-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    text-align: center;
+}
+
+.player-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    height: 80px;
+    max-width:100%;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-name-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-team {
+    color: var(--white);
+    font: 300 1.2rem/100% "Inter";
+    gap: 25px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.player-stats {
+    font: 400 1.2rem/100% "Inter";
+    color: var(--white);
+}
+
+.player-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 20px;
+    position: relative;
+}
+
+.new-item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.new-item p {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    color: var(--white);
+    font: 600 1.38rem/130% "Inter";
+    position: absolute;
+    margin: -110px 0 0 20px;
+    padding: 12px 20px 20px;
+    z-index: 1;
+    text-align: center;
+    width: calc(100% - 40px);
+    height: 89px;
+}
+
+.new-item img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-previous,
+.button-next {
+    background: var(--white);
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.button-previous {
+    left: -22px;
+}
+
+.button-next {
+    right: -22px;
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 70px;
+    padding: 24px 10px;
+    width: 100%;
+}
+
+.footer p {
+    font: 400 1.1rem/100% 'Inter',sans-serif;
+    color: var(--white);          
+    margin: 0;
+    opacity: 0.9;
+}

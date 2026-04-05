@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #b9c7d6;
+}
+
+/* TOPO */
+.topbar {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    border-bottom: 2px solid #2c7be5;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff0084;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+}
+
+.menu .active {
+    color: #ff0084;
+    font-weight: bold;
+}
+
+.profile-mini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-mini img {
+    border-radius: 50%;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 25px;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.small-card {
+    margin-bottom: 20px;
+}
+
+/* COLUNAS */
+.left {
+    width: 25%;
+    text-align: center;
+}
+
+.center {
+    width: 45%;
+}
+
+.right {
+    width: 30%;
+}
+
+/* PERFIL */
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #ff0084;
+    margin-bottom: 10px;
+}
+
+.btn-edit {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #ff0084;
+    font-weight: bold;
+}
+
+/* BIO */
+.bio {
+    background: #eef2f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+/* LISTA */
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* HEADER DOS CARDS */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* GRID DE IMAGENS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+}

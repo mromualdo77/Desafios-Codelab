@@ -1,0 +1,28 @@
+/* Tablet Styles (481px — 768px) */
+@media (mix-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input-search {
+        max-width: 400px;
+    }
+
+    .cards {
+        padding: 60px;
+    }
+}
+
+
+/* Laptop Styles (768px — 1024px) */
+@media (min-width:1024px) {
+    .input-search {
+        max-width: 500px;
+    }
+
+    .cards {
+        max-width: 1000px;
+    }
+
+}

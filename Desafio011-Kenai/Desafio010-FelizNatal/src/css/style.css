@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand-color: #cd3c32;
+    --dark: #121234;
+    --white: #ffffff;
+    --header: #FFE9E8;
+}
+
+body {
+    max-width: 100%;
+}
+
+.header-highlight {
+    background-color: var(--header);
+    display: flex;
+    min-height: 560px;
+    gap: 10px;
+}
+
+.container-highligth {
+    display: flex;
+    max-width: 1216px;
+    width: 100%;
+    min-height: 351px;
+    gap: 126px;
+    margin: auto;
+}
+
+.container {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    justify-content: start;
+    max-width: 590px;
+    width: 100%;
+}
+
+.title-and-description {
+    height: 262px;
+}
+
+.description-text {
+    height: 192px;
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.title-and-description h1 {
+    font: 600 40px/120% "Arquivo", sans-serif;
+    margin: 0 0 30px;
+}
+
+.title-and-description p {
+    height: 72px;
+    font: 400 22px/150% "Archivo", sans-serif;
+    padding: 5px 5px 0 0;
+}
+
+.container-button,
+.button-conect {
+    background: var(--brand-color);
+    border-radius: 4px;
+    color: var(--white);
+    display: inline-block;
+    font: 700 16.4px/100% "Roboto", sans-serif;
+    gap: 8px;
+    height: 49px;
+    padding: 14px 32px;
+    width: 238px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.container-button:hover,
+.button-conect:hover {
+    background: #b22e27;
+    transition: background 0.3s ease-in-out;
+}
+
+.header-image {
+    width: 500px;
+    height: 339px;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1216px;
+    width: 100%;
+    min-height: 745px;
+    margin: 210px auto;
+    gap: 40px;
+    text-align: center;
+}
+
+.title-description-stopwatch {
+    max-width: 447px;
+    height: 128px;
+    gap: 24px;
+    margin: -350px 0 50px 0;
+}
+
+.title-description-stopwatch h2 {
+    font: 600 40px/100% "Archivo", sans-serif;
+    text-align: center;
+}
+
+.title-description-stopwatch p {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font: 400 18.5px/150% "Archivo", sans-serif;
+    height: 60px;
+    margin-top: 28px;
+    margin-left: 1px;
+    max-width: 445px;
+    width: 100%;
+}
+
+.clock-stopwatch {
+    color: var(--brand-color);
+    font: 600 64px/100% "Archivo", sans-serif;
+    height: 70px;
+    text-align: center;
+    width: 604px;
+}
+
+.ilustration {
+    height: auto;
+    margin-top: 40px;
+    max-width: 478px;
+    width: 100%;
+}
+
+.conect-section {
+    display: flex;
+    max-width: 1216px;
+    width: 100%;
+    min-height: 554px;
+    margin: -210px auto 0;
+    padding: 80px 0;
+}
+
+.conect-intro {
+    gap: 40px;
+    height: 389px;
+    width: 602px;
+    margin: 0 0 0 205px;
+}
+
+.conect-intro h2 {
+    height: 92px;
+    width: 488px;
+    font: 600 40px/120% "Archivo";
+}
+
+.conect-intro p {
+    width: 602px;
+    height: 180px;
+    font: 400 24px/150% "Archivo", sans-serif;
+    margin: 30px 0 0 0;
+}
+
+.button-conect {
+    margin-top: 38px;
+}
+
+.footer {
+    background: var(--header);
+    width: 100%;
+    max-width: 1920px;
+    min-height: 80px;
+    padding: 20px 160px;
+    margin: 0 auto;
+}
+
+.container-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    gap: 1rem;
+}
+
+.container-footer .footer-papai-noel {
+    width: 150px;
+    height: 32px;
+    gap: 12px;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 344px;
+    height: 40px;
+}
+
+.links a:hover {
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.links a {
+    align-items: center;
+    display: flex;
+    border-radius: 999px;
+    background-color: #FFD5D3;
+    height: 40px;
+    gap: 10px;
+    padding: 2px 1px;
+    width: 40px;
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+border: none;
+background: none;
+}
+input, button, textarea,select{
+    font: inherit;
+}
+
+image,video, canvas,picture,svg{
+    display: block;
+    max-width: 100%;
+}
+
+/* Links e imagens */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

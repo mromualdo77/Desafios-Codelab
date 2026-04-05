@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Log Mine</title>
+
+</head>
+
+<body>
+    <div class="page">
+        <header class="pilot">
+            <img src="./src/image/logo.svg" alt="Logon Mine">
+
+            <nav class="links">
+                <a href="/" class="btn-link active">Entrar</a>
+                <a href="/" class="btn-link">forum</a>
+                <a href="/" class="btn-link">sobre</a>
+                <a href="/" class="btn-link">mojang</a>
+                <a href="/" class="btn-link">perguntas</a>
+            </nav>
+        </header>
+
+
+        
+        <main class="container-main">
+            <div class="banner-overlay"></div>
+            <div class="container-form">
+                <div class="information-login">
+                    <img src="./src/image/logo-solo.svg" alt="Logo solo">
+
+                    <form action="#" class="login-form" method="post" novalidate>
+                        <h1 class="visually-hidden">Entrar na conta Mine</h1>
+
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input id="email" type="email" name="email" required placeholder="Digite seu e-mail"
+                                autocomplete="email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"></label>
+                            <input id="password" type="password" required placeholder="Digite sua senha"
+                                autocomplete="current-password" />
+                        </div>
+
+                        <div class="form-options">
+                            <label for="checkbox">
+                                <input type="checkbox" id="Save-login" title="checkbox" name="remember" />
+                                <span>Salvar Informações de login</span>
+                            </label>
+                            <a href="#" class="forgot-password">Esqueceu a senha?
+                            </a>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Entrar</button>
+                        <p class="create-account">
+                            Não tem uma conta?
+                            <a href="#">Criar conta</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="features">
+                <ul>
+                    <li><a href="#">
+                            <img src="./src/image/power.svg" alt="">
+                            <p>Joque tambem offline</p>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./src/image/user.svg" alt="">
+                            <p>82 jogadores</p>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./src/image/controller.svg" alt="">
+                            <p>Compatível com uso remoto</p>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./src/image/vibrate.svg" alt="">
+                            <p>Vibração no controle</p>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="./src/image/baby.svg" alt="">
+                            <p>Permitido para menores</p>
+                        </a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

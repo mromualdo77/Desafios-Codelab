@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codepay</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styleconta.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav__logo"><a href="/">Codepay.</a></div>
+                <ul class="navbar__desktop__menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Comprar</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+
+                <div class="navbar__action">
+                    <button class="account-btn" type="button">
+                        <span>Conta</span>
+                        <img src="./src/image/arrow.svg" alt="Abrir conta">
+                    </button>
+
+                    <button class="cart-btn" type="button">
+                        <span>2 item</span>
+                        <img src="./src/image/cart.svg" alt="Carrinho de compras">
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="checkout">
+
+        <!-- ETAPAS -->
+        <aside class="checkout-steps">
+            <!-- <h2 class="visually-hidden">Etapas do checkout</h2> -->
+            <ol class="steps">
+                <li class="steps__item steps__item--active">
+                    <img src="./src/image/user.png" alt="Usuários">
+                    <span>Conta</span>
+                </li>
+
+                <li class="steps__item">
+                    <img src="./src/image/package.svg" alt="">
+                    <span>Envio</span>
+                </li>
+
+                <li class="steps__item ">
+                    <img src="./src/image/wallet.svg" alt="Carteira de dinheiro">
+                    <span>Pagamento</span>
+                </li>
+            </ol>
+        </aside>
+
+        <!-- CONTEÚDO -->
+        <section class="checkout__content">
+
+            <!-- FORMULÁRIO -->
+            <section class="account-details">
+                <h1 class="page-title">Detalhes da conta</h1>
+                <form action="/enviar" method="POST">
+                    <div class="form__group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                        <small class="form__hint">Mínimo de 8 caracteres</small>
+                    </div>
+
+                    <div class="form__actions">
+                        <a href="indexenvio.html" class="btn btn-primary">Registrar conta</a>
+                        <button type="button" class="btn btn-secondary"> Entrar</button>
+                    </div>
+
+                    <span class="traco-bottom"></span>
+
+                    <div class="form__actions">
+                        <button type="button" class="btn">Cancelar pedido</button>
+                        <button type="button" class="btn btn-ghost"> Continuar comprando</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- RESUMO DO PEDIDO -->
+            <aside class="order-summary">
+                <h2 class="order-summary__title">Resumo do pedido</h2>
+
+                <div class="order-summary__item">
+                    <img src="./src/image/image.png" alt="Mouse Gamer Redragon" class="order-summary__image">
+
+                    <div class="order-summary__details">
+                        <div class="order-summary-description">
+                            <h3 class="order-summary__product">Mouse Gamer Redragon</h3>
+                        </div>
+
+                        <div class="quantity-control">
+                            <span class="order-summary__price">R$15,22</span>
+                            <div class="control-btn">
+                                <button class="quantity-control__btn">-</button>
+                                <span class="quantity-control__value">2</span>
+                                <button type="button" class="quantity-control__btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUPOM -->
+                <div class="coupon">
+                    <label for="coupon">Cupom de desconto</label>
+                    <div class="coupon__field">
+                        <input type="text" id="coupon" placeholder="Digite seu cupom">
+                        <button class="btn btn--secondary">Aplicar</button>
+                    </div>
+                </div>
+
+                <!-- PREÇOS -->
+                <div class="prices-table">
+                    <div class="price-table__row">
+                        <span>Taxa</span>
+                        <span>R$3,45</span>
+                    </div>
+
+                    <div class="price-table__row">
+                        <span>Envio</span>
+                        <span>Grátis</span>
+                    </div>
+
+                    <div class="price-table__row price-table__row--total">
+                        <strong>Total</strong>
+                        <strong>R$30,44</strong>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+</body>
+
+</html>

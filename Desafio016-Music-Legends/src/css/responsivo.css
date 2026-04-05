@@ -1,0 +1,159 @@
+@media (max-width: 768px) {
+    .banner {
+        background: url('../img/bg.png');
+        max-height: auto;
+        background-size: cover;
+        max-width: 100%;
+    }
+
+    .header-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 2rem 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .header {
+        height: 96px;
+        width: 768px;
+        padding: 24px 0;
+    }
+
+    .title {
+        font-size: 32px;
+        justify-content: flex-start;
+    }
+
+    .user {
+        width: auto;
+        gap: 12px;
+    }
+
+    .details {
+        height: 208px;
+        padding: 0 1.5rem;
+        margin-top: 310px;
+        margin-left: 180px;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .card-content {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title-card {
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    .title-card span {
+        font-size: 16px;
+        padding-left: 4px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .controls-slider {
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .counter {
+        font-size: 18px;
+    }
+
+    .arrow-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .music-progress {
+        width: 40%;
+        height: 4px;
+        top: -4px;
+    }
+
+    .music-progress .music-fill {
+
+        width: 10px;
+        height: 10px;
+    }
+
+    .player-footer {
+        background: goldenrod;
+        /* display: flex; */
+        /* height: 100px; */
+        /* padding:1rem; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+    }
+
+    .footer-description {
+        background: #000;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 100%;
+    }
+
+    .music-info {
+        display: flex;
+        background: #000;
+        justify-content: start;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .fa-heart{
+    display: none; 
+    visibility: hidden;
+    }
+
+    .music-text {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .music-text h4 {
+        font-size: 18px;
+    }
+
+    .music-text p {
+        font-size: 14px;
+        padding-top: 4px;
+    }
+
+    .control {
+        /* align-items: flex-start; */
+        display: flex;
+        background: #fe02d87c;
+        width: 50%;
+        justify-content: center;
+        gap: 10px;
+        /* padding: 10px; */
+        margin-top: -110px;
+        margin-left: 150px;
+    }
+
+    .circle-play {
+        /* background: #000; */
+        /* padding: 2px; */
+    }
+
+}

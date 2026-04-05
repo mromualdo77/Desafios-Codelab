@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    html,
+    body {
+        height: 100%;
+    }
+
+    .container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        /* 1 coluna apenas */
+        justify-items: center !important;
+        /* centraliza horizontal */
+        align-items: center !important;
+        /* centraliza vertical */
+        min-height: 100vh !important;
+        width: 100% !important;
+        padding: 0 16px !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+    /* garante que a imagem não ocupe espaço algum */
+    .imagem-ilustrativa {
+        display: none !important;
+    }
+
+    /* centraliza o bloco do formulário */
+    .login-form {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .conteudo {
+        width: 100% !important;
+        max-width: 420px !important;
+        /* ajuste aqui se quiser maior/menor */
+        margin: 0 auto !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+}

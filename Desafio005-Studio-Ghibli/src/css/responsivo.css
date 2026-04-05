@@ -1,0 +1,97 @@
+/* ===== RESPONSIVO (TABLET 768px) ===== */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        padding: 1rem;
+    }
+
+    header .logo-studio {
+        position: relative;
+        width: 120px;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: 1rem;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 8rem auto 0 auto;
+        padding: 0 1rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .descricao {
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .descricao .titulos {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .titulos h1 {
+        font-size: 2.5rem;
+    }
+
+    .descricao .descricao-paragrafo {
+        margin: 1rem auto;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .descricao .botoes {
+        position: relative;
+        margin: 2rem auto;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    figure.ilustracao {
+        position: relative;
+        margin: 2rem auto;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ilustracao .chihiro-ghosts {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+        position: relative;
+    }
+}

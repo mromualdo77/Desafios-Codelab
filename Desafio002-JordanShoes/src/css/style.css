@@ -1,0 +1,185 @@
+:root {
+    --background-color: hsl(0, 0%, 100%);
+    --soft-azul-claro: hsl(220, 100%, 98%);
+    --soft-azul: hsl(221, 85%, 72%);
+    --soft-black: hsl(240, 5%, 7%);
+    --body-font: "Archivo", sans-serif;
+    --font-valor: "Space Grotesk", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--soft-black);
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+/* ===================== HEADER FIXO ===================== */
+.top-fixed-jordan {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-fixed-jordan p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--body-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--soft-black);
+}
+
+.hero-image {
+    background: url("../img/image-michael-jordan.png") center/cover no-repeat;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about-jordan {
+    margin-left: -750px;
+    max-width: 600px;
+    color: var(--background-color);
+}
+
+.logo-jordan {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.jordan-info .tagline {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.jordan-info .jordan-history {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* ===================== SEÇÃO PRODUTOS ===================== */
+.section-heading {
+    max-width: 1200px;
+    margin: 4rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.heading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-heading p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: var(--soft-black);
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* ===================== SEÇÃO PRODUTOS ===================== */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image-tenis {
+    background: var(--soft-azul-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+
+.image-tenis img {
+    max-width: 80%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-tenis img:hover {
+    transform: scale(1.1);
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+.detalhes h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.detalhes p {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    line-height: 1rem;
+    font-weight: 500;
+    color: var(--soft-azul);
+    font-size: 16px;
+}
+
+
+.product-price {
+    font-family: var(--font-valor);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0 -18rem;
+    color: var(--soft-black);
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    background: var(--soft-azul-claro);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--soft-azul);
+    text-decoration: none;
+    font-weight: 600;
+}

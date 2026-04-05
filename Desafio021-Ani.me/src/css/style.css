@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --brand-primary: #00a3ff;
+  --background-primary: #06090f;
+  --background-secondary: #151b26;
+  --background-button: rgba(21, 27, 38, 1);
+
+  --text-muted: #bfbfbf;
+
+  --text-white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+.workspace {
+  background: rgba(6, 9, 15, 1);
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-header {
+  height: 128px;
+}
+
+.nav-menu {
+  align-items: center;
+  display: flex;
+  height: 128px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 1216px;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+  gap: 72px;
+  height: 48px;
+  width: 817px;
+}
+
+.logo {
+  color: var(--brand-primary);
+  font: 500 40px/100% "Rubik", sans-serif;
+  height: 47px;
+  width: 134px;
+}
+
+.nav-list {
+  font: 500 18px/32px "Inter", sans-serif;
+  color: var(--text-white);
+}
+
+.nav-link--search {
+  background: var(--background-button);
+  border-radius: 37px;
+  gap: 16px;
+  height: 48px;
+  padding: 8px 100px 8px 24px;
+  width: 292px;
+}
+
+.scroll-nav {
+  height: 98px;
+  gap: 24px;
+  margin: 5px 0 0 130px;
+  padding: 24px 0 0 0;
+  width: 1216px;
+}
+
+.alpha-nav {
+  display: flex;
+  padding: 12px 16px;
+  gap: 1rem;
+  height: 50px;
+  max-width: 96%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.alpha-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.alpha-link {
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #bfbfbf;
+  text-decoration: none;
+  border: 2px solid #151b26;
+  transition: all 0.3s ease;
+}
+
+.alpha-link:hover {
+  color: #ffffff;
+  border-radius: 50px;
+  border-color: var(--brand-primary);
+}
+
+.active {
+  border: none;
+  background: var(--background-secondary);
+}
+
+.alpha-link.active {
+  color: var(--text-white);
+}
+
+.alpha-link.active::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  bottom: -10px;
+  width: 76%;
+  height: 5px;
+  background: var(--brand-primary);
+  border: 2px;
+}
+
+.main-screen {
+  gap: 40px;
+  height: 841px;
+  width: 1216px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.heading {
+  gap: 8px;
+  height: 73px;
+  width: 308px;
+}
+
+.heading h2 {
+  font: 400 36px/100% "Rubik", sans-serif;
+  color: var(--text-white);
+}
+
+.heading p {
+
+  font: 400 18px/100% "Inter", sans-serif;
+  color: var(--text-white);
+  height: 22px;
+  margin-top: 12px;
+}
+
+.banner {
+  position: relative;
+  height: 610px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.85)0%,
+      rgba(0, 0, 0, 0.6)40%,
+      rgba(0, 0, 0, 0.2)70%,
+      rgba(0, 0, 0, 0)100%);
+  z-index: 1;
+}
+
+.highlight-content {
+  gap: 8px;
+  height: 180px;
+  margin: -210px 0 0 32px;
+  position: absolute;
+  z-index: 2;
+  width: 707px;
+}
+
+.highlight-content h2 {
+  font: 500 36px/64px "Rubik", sans-serif;
+  color: var(--text-white);
+}
+
+.highlight-content p {
+  font: 400 18px/160% "Inter", sans-serif;
+  color: var(--text-muted);
+  width: 571px;
+}
+
+.cards-update {
+  gap: 40px;
+  height: 967px;
+  padding: 64px 0;
+  margin: auto;
+  width: 1216px;
+}
+
+.cards-update h3 {
+  color: var(--text-white);
+  font: 500 30px/100% "Rubik", sans-serif;
+  height: 36px;
+  padding: 64px 0 40px 0;
+  width: 306px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 675px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.card {
+  position: relative;
+  gap: 16px;
+  height: 313px;
+  margin: 0 auto;
+  padding: 0;
+  width: 192px;
+}
+
+figure {
+  height: 254px;
+  margin: 0;
+  object-fit: cover;
+}
+
+.card img {
+  position: absolute;
+  border-radius: 12px;
+  inset: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0.3) 55%,
+      transparent 75%);
+  z-index: 1;
+}
+
+.card:hover::after {
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.85) 40%,
+      transparent 80%);
+}
+
+figcaption {
+  position: absolute;
+  color: var(--text-white);
+  font: 500 14px/100% "Inter", sans-serif;
+  height: 20px;
+  left: 23px;
+  padding: 5px;
+  text-align: center;
+  top: 218px;
+  width: 142px;
+  z-index: 2;
+}
+
+.card p {
+  position: absolute;
+  color: var(--text-white);
+  font: 400 18px/100% "Rubik", sans-serif;
+  height: 43px;
+  margin: 16px 0 0 20px;
+  text-align: center;
+  width: 150px;
+  z-index: 2;
+}
+
+.btn-cards-grid {
+  text-align: center;
+  display: inline-block;
+  height: 48px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.btn-link {
+  display: inline-block;
+  background: var(--background-secondary);
+  border-radius: 4px;
+  color: var(--text-white);
+  font: 500 18px/32px "Rubik", sans-serif;
+  margin: auto;
+  padding: 8px 64px;
+}
+
+.anime-card {
+  border-radius: 1px solid var(--background-secondary);
+  height: 495px;
+  padding: 64px auto;
+  margin: 0px auto;
+  width: 1216px;
+}
+
+.card-image {
+  position: relative;
+  height: 291px;
+  gap: 18px;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.mini-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.95) 5%,
+      rgba(0, 0, 0, 0.3) 50%,
+      transparent 60%);
+  pointer-events: none;
+}
+
+.anime-card h3 {
+  font: 500 30px/100% "Rubik", sans-serif;
+  color: var(--text-white);
+  height: 36px;
+  position: absolute;
+  margin-top: 32px;
+  width: 245px;
+  z-index: 1;
+}
+
+.cards-anime-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+  position: relative;
+  top: 110px;
+}
+
+.mini-banner img {
+  display: block;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  height: 254px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 188px;
+}
+
+.card-image p {
+  position: relative;
+  color: var(--text-white);
+  height: 21px;
+  font: 400 18px/100% "Rubik", sans-serif;
+  margin: 18px 20px 0 20px;
+  z-index: 1;
+}
+
+
+
+
+
+.footer {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 65px;
+  justify-content: center;
+  padding: 24px 10px;
+  width: 100%;
+
+}
+
+.footer p {
+  align-items: center;
+  color: var(--text-white);
+  display: flex;
+  font: 400 14px/100% "Inter";
+  height: 22px;
+  justify-content: center;
+  padding: 10px 0;
+  width: 458px;
+}

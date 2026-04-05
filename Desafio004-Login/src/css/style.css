@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-container-left: #F3FFF2;
+    --form-email: #F7fAFC;
+    --box-login: #1E9E6A;
+    --box-register: #1A202C;
+    --text-form: #656769;
+    --color-primary: #E8E8E8;
+    --color-background: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: "Archivo", sans-serif;
+    background: var(--color-background);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* ==== Coluna da imagem ==== */
+
+.imagem-ilustrativa {
+    background: var(--color-container-left);
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* ==== Coluna do formulário ==== */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    gap: 5rem;
+}
+
+.titulo h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--box-register);
+    padding-bottom: 1.5rem;
+}
+
+.titulo h2 {
+    color: var(--box-register);
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 0px;
+}
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grupo-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -40px;
+}
+
+.grupo-inputs label {
+    color: var(--box-register);
+    font-size: 18px;
+    margin-bottom: -12px;
+}
+
+.grupo-inputs input {
+    background: var(--form-email);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    height: 1.6rem;
+}
+
+.options a {
+    color: var(--box-login);
+    text-decoration: none;
+    height: 17px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 2.5rem;
+}
+
+.btn-login,
+.btn-google {
+    background: var(--box-login);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    height: 3rem;
+}
+
+.btn-login {
+    background: var(--box-login);
+    color: var(--color-background);
+}
+
+.btn-google {
+    background: var(--box-register);
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-google img {
+    height: 24px;
+}
+
+.btn-login:hover,
+.btn-google:hover {
+    transform: scale(1.05);
+}
+
+.conteudo p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -1.2rem;
+}
+
+.conteudo a {
+    color: var(--box-login);
+    text-decoration: none;
+    font-weight: 500;
+}

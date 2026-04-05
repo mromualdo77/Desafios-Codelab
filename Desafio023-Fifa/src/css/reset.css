@@ -1,0 +1,114 @@
+/* reset.css — Reset moderno e acessível */
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Box sizing e remoção de espaçamentos padrão */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mídia responsiva */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Elementos de formulário herdam fonte */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* Botões: estilos básicos */
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Preferências de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Atributo hidden */
+[hidden] {
+    display: none !important;
+}
+
+/* Defaults para html e body */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    background: #fff;
+    color: #111827;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* Mantém foco visível para usuários de teclado */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Texto menor */
+small {
+    font-size: 80%;
+}
+
+/* Fontes monoespaçadas para código */
+pre,
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+}

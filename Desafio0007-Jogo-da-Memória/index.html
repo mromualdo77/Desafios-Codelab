@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo da Memória divertido para testa sua concentração e memória ">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title>Jogo da Memória</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>JOGO DA MEMÓRIA HALLOWEEN</h1>
+            <div class="game">
+                <ul class="cartas">
+                    <li class="item"><img src="./src/img/1.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/2.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/3.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/1.svg" alt=""></li>
+                    <li class="item special">Buuh!</li>
+                    <li class="item"><img src="./src/img/7.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/4.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/5.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/6.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/4.svg" alt=""></li>
+
+                    <li class="item"><img src="./src/img/9.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/8.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/2.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/5.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/8.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/9.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/6.svg" alt=""></li>
+                    <li class="item"><img src="./src/img/3.svg" alt=""></li>
+                </ul>
+            </div>
+            <!--Modal de Vitória-->
+            <div class="modal" id="modal-vitoria">
+                <div class="modal-content">
+                    <h2>Buuuh!</h2>
+                    <p>
+                        Parabéns! você completou este jogo da memória.<br>
+                        Que tal experimentar uma dificuldade diferente ou jogar novamente
+                    </p>
+                    <button id="btn-restart">Jogar novamente</button>
+                    <span class="spiderweb"><img src="./src/img/web.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>🎃 Boa sorte e divirta-se!</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+*{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    border: none;
+    background: none;
+}
+
+input, button, textarea,select{
+    font: inherit;
+}
+image, video, canvas,picture, svg{
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eFront Dashboard</title>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body>
+    <div id="root" class="dashboard-root">
+        <aside class="sidebar card" aria-label="Menu lateral">
+            <div class="sidebar-brand">
+                <strong>Front-end</strong>
+            </div>
+            <nav class="sidebar-nav" aria-label="Navegação principal">
+                <a class="sidebar-link active" href="#">Dashboard</a>
+                <a class="sidebar-link" href="#">Carteira</a>
+                <a class="sidebar-link" href="#">Transações</a>
+                <a class="sidebar-link" href="#">Suporte</a>
+                <a class="sidebar-link" href="#">Ajustes</a>
+            </nav>
+            <button class="button-logout" type="button">Desconectar</button>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="page-header">
+                <div>
+                    <h1>Olá, Maria</h1>
+                    <p>Aqui estão as informações sobre suas vendas.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Pesquisar">🔍</button>
+                    <button class="icon-btn" aria-label="Notificações">🔔</button>
+                    <div class="profile-pill">Maria Romualdo</div>
+                </div>
+            </header>
+
+            <section class="grid-2">
+                <article class="card">
+                    <h2>Gráfico de receitas</h2>
+
+                    <div class="grafico-container">
+                        <!-- eixo y -->
+
+                        <div class="eixo-y">
+                            <span>2000</span>
+                            <span>1000</span>
+                            <span>500</span>
+                            <span>250</span>
+                            <span>0</span>
+                        </div>
+
+                        <!-- gráfico -->
+                        <div class="grafico">
+                            <div class="coluna h25">
+                                <p>Fev</p>
+                            </div>
+                            <div class="coluna h45">
+                                <p>Mar</p>
+                            </div>
+                            <div class="coluna h70">
+                                <p>Abr</p>
+                            </div>
+                            <div class="coluna h55">
+                                <p>Mai</p>
+                            </div>
+                            <div class="coluna h85">
+                                <p>Jun</p>
+                            </div>
+                            <div class="coluna h95">
+                                <p>Jul</p>
+                            </div>
+                            <div class="coluna h40">
+                                <p>Ago</p>
+                            </div>
+                            <div class="coluna h60">
+                                <p>Set</p>
+                            </div>
+                            <div class="coluna h75 destaque">
+                                <p>Out</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2>Histórico de transações</h2>
+                    <ul class="transaction-list">
+                        <li><span>Ontem</span><strong>R$ -540,32</strong></li>
+                        <li><span>Quinta-Feira</span><strong>R$ -273,90</strong></li>
+                        <li><span>Segunda-Feira</span><strong>R$ -1.456,20</strong></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="grid-4 stats-grid">
+                <article class="card stat-card">
+                    <p>Total de vendas</p>
+                    <h3>R$ 3.265,21</h3>
+                    <span class="stat-up">+11%</span>
+                </article>
+
+                <article class="card stat-card">
+                    <p>Total líquido</p>
+                    <h3>R$ 2.825,58</h3>
+                    <span class="stat-up">+15%</span>
+                </article>
+
+                <article class="card stat-card">
+                    <p>Compras canceladas</p>
+                    <h3>R$ 130,00</h3>
+                    <span class="stat-down">-80%</span>
+                </article>
+
+                <article class="card stat-card">
+                    <p>Reembolsos</p>
+                    <h3>R$ 345,00</h3>
+                    <span class="stat-down">-78%</span>
+                </article>
+            </section>
+
+            <section class="card table-card">
+                <h2>Histórico de compradores</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Nome</th>
+                            <th>Localização</th>
+                            <th>Valor</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12345</td>
+                            <td>02/08/2023</td>
+                            <td>Roberto Santos</td>
+                            <td>Rio Grande do Sul</td>
+                            <td>R$ 15,00</td>
+                            <td><span class="status status-ok">Aprovado</span></td>
+                        </tr>
+                        <tr>
+                            <td>#67890</td>
+                            <td>03/08/2023</td>
+                            <td>Beatriz Rodrigues</td>
+                            <td>Salvador</td>
+                            <td>R$ 15,00</td>
+                            <td><span class="status status-pending">Em análise</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

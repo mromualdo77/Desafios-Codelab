@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --brand-color: #eb4848;
+    --dark: #131313;
+    --gray: #929292;
+    --white: #FFFFFF;
+    --brand-purple: #a855f7;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
+.banner {
+    background:
+        linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.9)),
+        url("../img/bg.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    background: var(--dark);
+    height: 65px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+.container-links {
+    align-items: center;
+    color: var(--white);
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    /* width: 1430px; */
+}
+
+.container-links,
+.footer-description {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header-links {
+    align-items: center;
+    display: flex;
+    height: 25px;
+    gap: 48px;
+    width: 476px;
+}
+
+.title {
+    align-items: center;
+    color: var(--brand-color);
+    display: flex;
+    font: 400 32px/100%;
+    height: 40px;
+    justify-content: center;
+    width: 476px;
+}
+
+.user {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 476px;
+}
+
+.intro-img {
+    border: 2px solid var(--brand-purple);
+    border-radius: 100%;
+    height: 48px;
+    object-fit: cover;
+    width: 48px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 96px);
+    padding-left: 130px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 420px;
+    left: 130px;
+    height: 168px;
+    width: 212px;
+}
+
+.title-card {
+    font-size: 37px;
+    line-height: 1;
+    color: var(--white);
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.title-card span {
+    /* display: flex; */
+    background: #000;
+    font-size: 18px;
+    margin-left: -6px;
+}
+
+.subtitle {
+    color: var(--white);
+    line-height: 100%;
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.controls-slider {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    gap: 18px;
+    justify-content: flex-start;
+    width: 170px;
+}
+
+.arrow-btn {
+    border-radius: 50%;
+    border: none;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    height: 36px;
+    transition: 0.2s;
+    width: 36px;
+}
+
+.arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.counter {
+    color: var(--white);
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+.music-progress {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 15%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.music-progress .progress-fill {
+    position: absolute; 
+    height: 3px;
+    background: #ffffff;
+    width: 35%;
+    border-radius: 4px;
+}
+
+.music-progress .progress-dot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    width: 12px;
+    height: 12px;
+    background: #ff4444;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #ff4444;
+}
+
+.player-footer {
+    background: var(--dark);
+    align-items: center;
+    display: flex;
+    height: 80px;
+    padding: 12px;
+    position: relative;
+}
+
+.footer-description {
+    align-items: center;
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+}
+
+.music-info {
+    display: flex;
+    gap: 32px;
+    height: 55px;
+    width: 261px;
+}
+
+.music-info .fa-solid {
+    align-items: center;
+    color: red;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin: 4px;
+    width: 48px;
+}
+
+.music-text {
+    gap: 7px;
+    height: 55px;
+    width: 181px;
+}
+
+.music-text h4 {
+    font: 600 24px/100% "Lexend", sans-serif;
+    color: var(--white);
+}
+
+.music-text p {
+    color: var(--white);
+    display: flex;
+    font: 400 17px/100% "Lexend", sans-serif;
+    padding-top: 14px;
+    text-transform: uppercase;
+}
+
+.control {
+    align-items: center;
+    color: #929292;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    height: 48px;
+    width: auto;
+}
+
+.circle-play {
+    border-radius: 100%;
+    border: 2px solid #232323c1;
+    background: hsl(0, 0%, 10%);
+    padding: 28px;
+}
+
+.fa-play {
+    color: red;
+}
+
+.control .fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extras {
+    align-items: center;
+    color: #929292;
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    gap: 64px;
+    width: 160px;
+}

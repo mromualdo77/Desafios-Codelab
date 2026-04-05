@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Preahvihear&display=swap");
+
+:root {
+    --bg-dark-10: #0a0a0a;
+    --dark-20: #0e0e0e;
+    --bg-section: #121212;
+    --bg-footer: #0B0B0B;
+    --brand-purple: #a855f7;
+    --text-light: #e5e5e5;
+    --gray: #aaaaaa;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    background-color: var(--bg-dark-10);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Preahvihear", sans-serif;
+}
+
+/* ======= CONTAINERS ======= */
+.container {
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* ======= NAVBAR ======= */
+.header {
+    background: var(--bg-dark-10);
+    padding: 30px 0 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom: 3px solid var(--bg-section);
+}
+
+.logo {
+    color: var(--brand-purple);
+    font: 400 1.4rem/100% "Preahvihear", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font: 500 1.1rem/100% "Inter", sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--brand-purple);
+}
+
+/* ======= HERO ======= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.greeting {
+    color: var(--text-light);
+    font: 500 1.12rem/100% "Inter", sans-serif;
+}
+
+.name {
+    color: var(--brand-purple);
+    font: 400 2rem/100% "Preahvihear", sans-serif;
+    padding: 1rem 0;
+}
+
+.role {
+    font: 500 1rem/100% "Inter", sans-serif;
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+.hero-image img {
+    background: var(--brand-purple);
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(circle, #3b006d, transparent 70%);
+    padding: 2px;
+    margin: 0 120px 0 0;
+}
+
+/* ======= BOTÕES ======= */
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font: 500 1rem/100% "Inter", sans-serif;
+    margin: 45px 35px 0 0;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    border: 2px solid var(--brand-purple);
+    background: var(--brand-purple);
+    color: var(--bg-dark-10);
+}
+
+.btn-primary:hover {
+    background-color: var(--bg-dark-10);
+    color: var(--brand-purple);
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: var(--brand-purple);
+    color: var(--bg-dark-10);
+    border: 1px solid var(--brand-purple);
+}
+
+.btn-secondary:hover {
+    background: var(--brand-purple);
+    color: var(--text-light);
+}
+
+.btn-outline {
+    border: 1px solid var(--brand-purple);
+    color: var(--brand-purple);
+}
+
+.btn-outline:hover {
+    border-color: var(--brand-purple);
+    color: var(--text-light);
+}
+
+/* ======= SOBRE ======= */
+.about {
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-20);
+    padding: 60px 0;
+    height: 562px;
+}
+
+.about h2 {
+    justify-content: center;
+    display: flex;
+    color: var(--brand-purple);
+    font: 400 1.6rem/100% "Preahvihear", sans-serif;
+    height: 38px;
+}
+
+.about p {
+    font: 400 1rem/160% "Inter";
+    text-align: start;
+    max-width: 700px;
+    margin: 60px 0px 10px 0px;
+}
+
+.about .btn-curriculum {
+    background: var(--brand-purple);
+    border: 2px solid var(--brand-purple);
+    border-radius: 5px;
+    color: var(--bg-dark-10);
+    display: inline-block;
+    font: 500 18px/100% "Inter", sans-serif;
+    margin-top: 145px;
+    padding: 10px 40px;
+    width: 235px;
+    transition: 0.3s
+}
+
+.btn-curriculum:hover {
+    background-color: var(--bg-dark-10);
+    color: var(--brand-purple);
+    opacity: 0.9;
+}
+
+.links-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -224px;
+    margin-left: 1050px;
+    padding: 28px 50px;
+    width: 156px;
+}
+
+.links-social a {
+    color: var(--brand-purple);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.links-social a:hover {
+    color: var(--gray);
+}
+
+.about .btn-secondary {
+    gap: 15px;
+}
+
+/* ======= EXPERIÊNCIAS ======= */
+
+.experience {
+    padding: 130px 0;
+    background: var(--bg-dark-10);
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-experience {
+    font: 500 32px/100% "Preahvihear", sans-serif;
+    color: var(--brand-purple);
+    margin-top: -50px;
+}
+
+.experience p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 290px;
+    width: 904px;
+}
+
+.company-info h3 {
+    font: 500 24px/100% "Inter", sans-serif;
+    padding: 50px 0;
+}
+
+.skills {
+    background: var(--bg-dark-10);
+    width: 165px;
+    margin-top: -285px;
+    height: 390px;
+    padding: 2px 0 0 5px;
+    border-left: 2px solid var(--brand-purple);
+    border-radius: 8px;
+    padding-left: 25px;
+}
+
+.skills a {
+    border-bottom: 2px solid var(--brand-purple);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    border-radius: 3px;
+    font: 500 16px/100% "Inter", sans-serif;
+}
+
+.projetos {
+    background: var(--dark-20);
+    padding: 80px 0;
+}
+
+.projetos h2 {
+    color: var(--brand-purple);
+    text-align: center;
+    margin-bottom: 40px;
+    font: 400 32px/100% "Preahvihear";
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(592px, 1fr));
+    gap: 34px;
+}
+
+.project-card {
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.project-image {
+    height: 200px;
+    border-radius: 8px;
+    border-left: 3px solid var(--brand-purple);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+}
+
+.project-card h3 {
+    margin: 38px 0 40px 0;
+    font: 500 24px/100% "Inter", sans-serif;
+    color: var(--text-light);
+}
+
+.project-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.project-card h4 {
+    color: var(--brand-purple);
+    font: 500 18px/100% "Inter", sans-serif;
+    font-style: Medium;
+    margin: 15px 0;
+}
+
+.footer {
+    padding: 40px 0px;
+    background: var(--bg-footer);
+    color: var(--gray);
+    font-size: 0.9rem;
+    text-align: center;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer p:first-child {
+    margin-bottom: 4px;
+}

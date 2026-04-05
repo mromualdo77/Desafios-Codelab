@@ -1,0 +1,195 @@
+/* reset.css — Reset CSS moderno e leve 🔧
+   Objetivo: remover estilos padrão do navegador e aplicar valores base consistentes.
+*/
+
+/* Box sizing global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remover margens e paddings padrão */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Base do body */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: transparent;
+    color: inherit;
+}
+
+/* Listas sem marcadores */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Blockquote e q */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Imagens e mídia responsiva */
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Links e textos */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Formularios */
+nbutton,
+input,
+select,
+textarea {
+    font: inherit;
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+/* Foco acessível */
+:focus {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+}
+
+/* Redefinir possíveis estilos de tabela, legendas etc. */
+caption,
+th {
+    text-align: left;
+}
+

@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+    .hero-inner {
+        justify-content: center;
+    }
+
+    .grupo-artigo {
+        text-align: center;
+        align-items: center;
+    }
+
+    .text-artigo {
+        font-size: 28px;
+    }
+
+    .segundo-paragrafo {
+        font-size: 16px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .image-lateral {
+        order: -1;
+    }
+}
+
+
+@media (max-width:390px) {
+    text-artigo {
+        font-size: 22px;
+    }
+
+    .segundo-paragrafo {
+        font-size: 14px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}

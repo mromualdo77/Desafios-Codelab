@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    /* === Brand === */
+    --color-brand-primary: #ffa634;
+    --color-brand-secondary: #ff267a;
+
+    /* === Neutrals ===*/
+    --color-dark-100: #121214;
+    --color-dark-200: #181818;
+    --color-gray-400: #a8a8a8;
+    --color-white: #ffffff;
+
+    /* Gradients*/
+    --gradient-kenai: linear-gradient(264deg, #FF267A 0%, #FFA634 101.03%);
+    --gradient-btn-watch:linear-gradient(90deg, hsla(33, 100%, 43%, 1) 50%, hsla(48, 80%, 68%, 1)100%);
+    --gradient-btn-hover:linear-gradient(to right, #ffa200, #ffa023);
+    --gradient-text:linear-gradient(45deg, #00c6ff, #0072ff);
+    --gradient-blue:linear-gradient(to right, #00c6ff, #0072ff);
+    --gradient-blue-hover:linear-gradient(to right, #00b0e0, #0060d0);
+    --gradient-option:linear-gradient(90deg, #ff9b3f 0%, #ff267a 100%);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../image/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.film-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 24px 34px;
+}
+
+.logo {
+    background: var(--gradient-kenai);
+    font: 400 40px/100% "Open Sans", sans-serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo:hover{
+    text-shadow:0 0 10px rgba(255, 152, 63, 0.8) ;
+    
+    text-shadow:0 0 20px rgba(255, 100, 40, 0.8) ;
+    text-shadow:0 0 40px rgba(255, 38, 122, 0.8) ;
+    text-shadow:0 0 60px rgba(255, 38, 122, 0.7) ;
+    text-shadow:0 0 80px rgba(255, 38, 122, 0.6) ;
+    /* transform: scale(1.05); */
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    animation: pulseGlow 1.5s ease-in-out infinite alternate;
+}
+
+/*ANIMAÇÃO DE PULSAR LOGO KENAI*/
+@keyframes pulseGlow{
+    0%{
+        text-shadow: 
+            0 0 8px rgba(255, 152, 60, 0.6),
+            0 0 16px rgba(255, 100, 40, 0.6),
+            0 0 32px rgba(255, 38, 122, 0.5);
+    }
+    100%{
+         text-shadow: 
+            0 0 14px rgba(255, 152, 63, 1),
+            0 0 28px rgba(255, 100, 40, 1),
+            0 0 56px rgba(255, 38, 122, 0.9);
+    }
+}
+
+.kenai-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 14px;
+    height: 40px;
+}
+
+.kenai-nav img {
+    display: block;
+    width: 28px;
+}
+
+.nav-links li {
+    color: var(--color-white);
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    font: 600 20px/100% "Open Sans", sans-serif;
+}
+
+.nav-links a {
+    color: var(--color-white);
+}
+
+.featured-film {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    height: 952px;
+    max-width: 100%;
+    width: 1216px;
+    margin: 35px auto;
+}
+
+.presentation {
+    width: 246px;
+    height: 75px;
+    gap: 24px;
+    margin-top: 64px;
+    position: absolute;
+}
+
+.presentation p {
+    color: var(--color-brand-primary);
+    font: 600 14px/100% "Open Sans", sans-serif;
+    padding: 8px 8px;
+}
+
+.frame-star {
+    color: var(--color-white);
+    display: flex;
+    gap: 4px;
+    height: 24px;
+    margin: 22px 0;
+    width: 246px;
+}
+
+.frame-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.movie-timer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 0 34px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    height: 333px;
+    gap: 40px;
+    margin: 240px 0 0 0;
+    width: 592px;
+}
+
+.details h2 {
+    font: 600 56px/100% "Open Sans", sans-serif;
+    color: var(--color-white);
+}
+
+.film-description {
+    font: 600 20px/150% "Open Sans", sans-serif;
+    color: var(--color-white);
+    height: 150px;
+}
+
+.btn-watch {
+    border-radius: 20px;
+    background: var(--gradient-btn-watch);
+    color: var(--color-white);
+    font: 700 20px/100% "Open Sans", sans-serif;
+    height: 51px;
+    padding: 12px 40px;
+    width: 216px;
+}
+
+.btn-watch:hover {
+    background: var(--gradient-btn-hover);
+    box-shadow: 0 5px 20px rgba(247, 143, 4, 1);
+    transform: translateY(2px);
+}
+
+.list-film {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 400px;
+    width: auto;
+    max-width: 1216px;
+    margin: -198px 0 15px 155px;
+}
+
+.list-film figure {
+    align-items: center;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-film figcaption {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: center;
+    gap: 8px;
+    height: 77px;
+    margin: -85px 0 0 0px;
+}
+
+.classification {
+    border-top: 8px;
+    border-bottom: 8px;
+    color: var(--color-brand-primary);
+    font: 600 12px/100% "Open Sans", sans-serif;
+    height: 20px;
+    padding: 2px 6px;
+}
+
+.film-rating img {
+    height: 16px;
+    width: 16px;
+}
+
+.list-film h3 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font: 600 20px/100% "Open Sans", sans-serif;
+    height: 27px;
+}
+
+.content-user {
+    background-color: var(--color-dark-100);
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    max-width: 100%;
+    width: 1920px;
+    padding-top: 55px;
+}
+
+.screen-profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 176px;
+    height: 948px;
+    margin: -1px 151px 0 151px;
+    padding: 56px 0;
+    width: 1216px;
+    border-radius: 5px;
+    box-shadow:0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-user {
+    align-items: center;
+    color: var(--color-white);
+    display: flex;
+    height: 112px;
+    justify-content: space-between;
+    padding: 0 64px;
+    max-width: 100%;
+}
+
+.logo-user p {
+    font: 300 36px/100% "Open sans", sans-serif;
+}
+
+.header-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 817px;
+    height: 165px;
+    z-index: 1;
+    left: 350px;
+    top: 1570px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.header-user h3 {
+    font: 300 60px/100% "Open Sans", sans-serif;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--gradient-text)
+}
+
+.header-user p {
+    background-image: var(--gradient-text);
+    color: transparent;
+    font: 300 30px/100% "Open Sans", sans-serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 30px 0;
+}
+
+.container-user {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+    height: 260px;
+    margin-top: 255px;
+    width: 817px;
+}
+
+.avatar-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 241px;
+}
+
+.avatar-card img {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.container-user p {
+    color: transparent;
+    background-image: var(--gradient-blue);
+    display: flex;
+    justify-content: space-around;
+    font: 400 1.6rem/100% "Open Sans", sans-serif;
+    height: 30px;
+    width: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.button-add {
+    align-items: center;
+    background: var(--gradient-blue);
+    border-radius: 20px;
+    border: none;
+    color: var(--color-white);
+    display: flex;
+    font: 600 20px/100% "Open Sans", sans-serif;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 20%;
+}
+
+.button-add:hover {
+    background: var(--gradient-blue-hover);    
+    box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+    transform: translateY(-2px);
+}

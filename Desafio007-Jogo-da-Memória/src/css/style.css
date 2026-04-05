@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+
+:root {
+   --brand-color-purple: #8958ff;
+   --brand-color-paper: #ffe3bd;
+   --dark: #000014;
+   --white: #ffffff;
+}
+
+body {
+   font-family: "Jolly Lodger", system-ui;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: var(--dark);
+}
+
+h2 {
+   font-size: 1.6em;
+   color: #58bde2;
+   /* background: #222; */
+   /* border-radius: 12px; */
+   padding: 10px 0px;
+   margin-bottom: 20px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   /* box-shadow: 0 2px 8px rgb(233, 26, 26); */
+}
+
+.container {
+   background: radial-gradient(circle at top, #28014c 0%, #11113d 100%);
+   width: 50%;
+   height: 70%;
+}
+
+
+.game {
+   display: grid;
+   grid-template-columns: repeat(6, 120px);
+   grid-template-rows: repeat(3, 120px);
+   gap: 0px;
+   justify-content: center;
+   max-width: calc(6 * 120px + 5 * 18);
+   padding: 8px;
+   margin: 2px  0 -35px 6px;
+   background: none;
+}
+
+.item {
+   background: #ffe4c4;
+   aspect-ratio: 1/1;
+   border-radius: 10px;
+   width: 6rem;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.507);
+   position: relative;
+   transform: 0.2s;
+}
+
+
+.item img {
+   width: 60%;
+   height: auto;
+}
+
+.item:hover {
+   transform: scale(1.05);
+}

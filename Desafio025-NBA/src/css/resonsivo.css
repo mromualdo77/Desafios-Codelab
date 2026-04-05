@@ -1,0 +1,64 @@
+@media (max-width: 480px) {
+
+    .timer-placar strong {
+        font-size: 24px;
+    }
+
+    .team-name {
+        font-size: 20px;
+    }
+
+    .player-info img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .stats-labels,
+    .player-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+    .button-previous,
+    .button-next {
+        display: none;
+    }
+
+    .new-item {
+        height: 280px;
+    }
+
+    .new-item p {
+        font-size: 1rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .pilot {
+        padding: 24px;
+    }
+
+    .games-today {
+        grid-template-columns: 1fr;
+    }
+
+    .header-game .content {
+        max-width: 100%;
+    }
+
+    .player-row {
+        width: 100%;
+    }
+
+    .news {
+        grid-template-columns: 1fr;
+    }
+}
