@@ -39,9 +39,7 @@ header {
     align-items: center;
     width: 60rem;
     height: 5rem;
-    /* position: absolute; */
-    /* left: 12rem; */
-    margin: 2px 0  0 260px;
+    margin: 2px auto;
 }
 
 header .logo-studio {
@@ -49,7 +47,7 @@ header .logo-studio {
     width: 166px;
     height: 80px;
     top: 3px;
-    left: 260px;
+    left: 275px;
     padding: 8px;
 }
 
@@ -60,7 +58,7 @@ header .nav-links {
     padding: 10px 0;
     justify-content: space-between;
     align-items: center;
-    margin-left: 44rem;
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -85,72 +83,75 @@ header .nav-links {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
-    width: 63rem;
+    width: 38rem;
     height: 27rem;
-    margin: 5rem 0 0 13.5rem;
+    margin: 8rem 0 0 17.5rem;
     overflow: hidden;
 }
 
 .info-do-conteudo {
     margin: 0;
-    width: 32.5rem;
+    width: 38rem;
     height: 100%;
 }
 
 .descricao {
-    width: 32.4rem;
-    height: 27rem;
+    width: 38rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 11rem; */
 }
 
 .descricao .titulos {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 11rem;
-    left: 15.5rem;
-    width: 22rem;
-    height: 11rem;
+    top: 13.2rem;
+    left: 17.5rem;
+    width: 38rem;
+    height: 12rem;
+    gap: 1rem;
     margin: 0;
 }
 
 .titulos h4 {
-    font: 700 0.8rem var(--font-family);
+    font: 700 1.2rem var(--font-family);
     text-transform: uppercase;
     color: var(--background-color);
-    padding: 0 0 0 -1rem;
-    margin-top: 1rem;
+    margin: auto 0 0 0.4rem;
 }
 
 .titulos h1 {
-    font: 800 58px/100% var(--font-family);
+    font: 800 72px/100% var(--font-family);
     color: var(--background-color);
     font-weight: 800;
-    margin-top: 24px;
-    padding: 11rem 0  0 -22rem;
-    letter-spacing: 1.2;
+    margin-top: 2px;
+    padding: 11rem 0 0 -22rem;
+    letter-spacing: 0.2rem;
+    height: 9.4rem;
 }
 
 .descricao .descricao-paragrafo {
-    font: 500 20px/100% var(--alt-font);
+    font: 500 22px/100% var(--alt-font);
     color: var(--background-color);
     font-weight: 400;
     line-height: 1.5;
-    width: 420px;
+    width: 100%;
     height: 90px;
-    margin: 4rem 0 1rem -4rem;
+    margin: 7rem 0 1rem auto;
 }
 
 .buttons {
     display: flex;
-    padding: 0.6rem;
+    justify-content: space-between;
+    padding: 0.5rem;
     gap: 2rem;
-    margin: 0 0 -18rem 5rem;
+    margin: 3rem 0 -18rem -1rem;
     position: absolute;
+    width: 36rem;
+    z-index: 1;
 }
 
 .button {
@@ -198,11 +199,11 @@ header .nav-links {
 figure.ilustracao {
     position: absolute;
     top: 12rem;
-    left: -6rem;
-    width: 30rem;
+    left: -41rem;
+    width: 20rem;
     max-width: 100%;
     height: 18.9rem;
-    margin: 0 0 0 52rem;
+    margin: 0 0 0 100rem;
     display: block;
     flex-direction: column;
     align-items: center;
