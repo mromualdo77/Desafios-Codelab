@@ -4,8 +4,8 @@ Bem-vindo ao repositório do meu portfólio!
 Aqui você encontra informações sobre mim, meus projetos, serviços oferecidos e habilidades como desenvolvedora Frontend.
 
 ## 📸 Preview
+<img width="1920" height="913" alt="image" src="https://github.com/user-attachments/assets/e7e05a01-359b-4233-a379-90f3cdf539dd" />
 
-<img width="1920" height="3326" alt="Meu Portifólio" src="https://github.com/user-attachments/assets/efda43bf-52dd-49b1-9b49-fa3891bd76bf" />
 
 ## ✨ Sobre
 
