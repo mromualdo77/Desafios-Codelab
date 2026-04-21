@@ -1,0 +1,207 @@
+/* RESPONSIVO MOBILE - Até 768px */
+@media (max-width: 768px) {
+    .header-image::before {
+        display: none;
+    }
+
+    .header-container,
+    .highlight-wrapper {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-products {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+        margin: auto;
+    }
+
+    .header-image {
+        margin: 0 0 0 155px;
+    }
+}
+
+/* RESPONSIVO TABLET - 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .header-content {
+        padding: 20px;
+    }
+
+    .header-content .button {
+        margin: 0 0 0 175px;
+    }
+
+    .header-image::before {
+        display: none;
+    }
+
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* RESPONSIVO DESKTOP GRANDE - Acima de 1200px */
+@media (min-width: 1200px) {
+    .header-container {
+        max-width: 1400px;
+    }
+
+    .header-image {
+        margin: -9px 10px;
+    }
+
+    .highlight-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .container-products {
+        max-width: 1400px;
+    }
+}
+
+
+
+/* Ajustes para telas muito pequenas - Até 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        height: auto;
+    }
+
+    /* Ajuste de Containers Genéricos */
+    .header-banner,
+    .highlight,
+    .highlight-wrapper,
+    .donation {
+        width: 100%;
+        max-width: 100%; /* Garante que não ultrapasse a tela */
+        height: auto; /* Permite que o conteúdo defina a altura */
+        padding: 20px 15px;
+        box-sizing: border-box;   /* Essencial para o padding não somar na largura */
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-container h1 {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .header-container p {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    /* Seção de Produtos (Doação) */
+    .container-products {
+        align-items: center;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px;
+        /* Espaçamento entre os cards */
+        width: 100%;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .container-products .card {
+        width: 100%;
+        max-width: 280px;
+        /* Evita que o card fique gigante em telas de 480px */
+        margin: 0 auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    /* Botões */
+    .button {
+        display: inline-block;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 0;
+        text-align: center;
+        text-decoration: none;
+        /* background-color: #333; */
+        /* Cor exemplo */
+        color: white;
+        border-radius: 5px;
+    }
+
+    .footer .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer .footer-content p:nth-child(1) {
+        text-align: left;
+    }
+
+    .footer .footer-content p:nth-child(2) {
+        text-align: center;
+    }
+
+    .footer .footer-content p:nth-child(3) {
+        text-align: right;
+    }
+}
+
+
+
+
+
+/* ORIENTAÇÃO LANDSCAPE EM MOBILE */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header-banner {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .header-image {
+        max-width: 300px;
+    }
+
+    .header-dog-1 {
+        max-width: 200px;
+    }
+
+    .header-image::before {
+        width: 400px;
+        height: 200px;
+    }
+}
