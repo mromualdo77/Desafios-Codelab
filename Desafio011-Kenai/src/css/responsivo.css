@@ -1,0 +1,38 @@
+/* ===== RESPONSIVO ===== */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .details h2 {
+        font-size: 2.2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo-user {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .film-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .details h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-watch {
+        width: 100%;
+    }
+
+    .container-user {
+        grid-template-columns: 1fr;
+    }
+}
