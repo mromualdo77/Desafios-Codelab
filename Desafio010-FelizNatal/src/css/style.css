@@ -139,7 +139,10 @@ body {
 }
 
 .conect-section {
+    align-items: center;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 1216px;
     width: 100%;
     min-height: 554px;
@@ -148,10 +151,14 @@ body {
 }
 
 .conect-intro {
-    gap: 40px;
-    height: 389px;
-    width: 602px;
-    margin: 0 0 0 205px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .conect-intro h2 {
@@ -161,7 +168,6 @@ body {
 }
 
 .conect-intro p {
-    width: 602px;
     height: 180px;
     font: 400 24px/150% "Archivo", sans-serif;
     margin: 30px 0 0 0;
@@ -172,12 +178,9 @@ body {
 }
 
 .footer {
+
     background: var(--header);
-    width: 100%;
-    max-width: 1920px;
-    min-height: 80px;
-    padding: 20px 160px;
-    margin: 0 auto;
+    padding: 10px 0;
 }
 
 .container-footer {
@@ -187,7 +190,6 @@ body {
     max-width: 1216px;
     width: 100%;
     margin: 0 auto;
-    height: 40px;
     gap: 1rem;
 }
 
@@ -205,18 +207,30 @@ body {
     height: 40px;
 }
 
-.links a:hover {
-    background-color: transparent;
-    color: aliceblue;
+.links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background:rgba(255, 255, 255, 0.08);
+    height: 44px;
+    width: 44px;
+    transition: all 0.3s ease;
 }
 
-.links a {
-    align-items: center;
-    display: flex;
-    border-radius: 999px;
-    background-color: #FFD5D3;
-    height: 40px;
-    gap: 10px;
-    padding: 2px 1px;
+.links a:hover {
+    background-color:rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.links img{
     width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.links a:hover img{
+    transform:  scale(1.1);
+    filter: brightness(1.2);
 }

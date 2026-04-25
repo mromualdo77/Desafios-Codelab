@@ -1,0 +1,113 @@
+/* Media Query para telas até 768px (Tablet) */
+@media (max-width: 768px) {
+    .header-highlight {
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    .container-highligth {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-and-description h1 {
+        font: 600 40px/120% "Arquivo";
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        height: 96px;
+    }
+
+    .title-and-description p {
+        font: 400 24px/150% "Arquivo";
+        margin: 10px auto;
+        max-width: 600px;
+    }
+
+    .container .container-button {
+        display: flex;
+        justify-content: center;
+        width: 238px;
+        margin: 20px auto;
+    }
+
+    .header-image {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .stopwatch {
+        margin: 100px auto;
+        padding: 0 20px;
+    }
+
+    .title-description-stopwatch h2 {
+        font-size: 32px;
+    }
+
+    .clock-stopwatch {
+        font-size: 48px;
+    }
+
+    .ilustration {
+        max-width: 300px;
+    }
+
+    .conect-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .conect-section .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .conect-intro {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .conect-intro .button-conect{
+        margin: auto;
+    }
+    .conect-intro h2 {
+        margin: auto;
+    }
+
+   
+    .container-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: center;
+    }
+}
