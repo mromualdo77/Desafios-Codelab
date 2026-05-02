@@ -1,6 +1,4 @@
-# Desafio 010 - Feliz Natal
-
-Projeto de front-end desenvolvido como exercício do Desafios Codelab.
+# Projeto de front-end desenvolvido como exercício do Desafios Codelab.
 
 ## Sobre
 
@@ -26,4 +24,4 @@ Uma landing page temática de Natal criada em HTML e CSS, com layout responsivo 
 
 ## Autor
 
-- Projeto criado para o Desafios Codelab.
+- Projeto criado para o Desafios [Codelab](https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=39340-782&p=f&t=Rr2reSKdY7FH3RZk-0).
