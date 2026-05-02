@@ -2,15 +2,15 @@
 
 /* TABLET */
 @media (max-width: 768px) {
-    .details h2 {
+    .hero-title {
         font-size: 2.2rem;
     }
 
-    .nav-links {
+    .nav-list {
         display: none;
     }
 
-    .logo-user {
+    .profile-header {
         flex-direction: column;
         gap: 10px;
         text-align: center;
@@ -19,20 +19,26 @@
 
 /* MOBILE */
 @media (max-width: 480px) {
-    .film-header {
+    .header {
         flex-direction: column;
         gap: 10px;
     }
 
-    .details h2 {
+    .hero-title {
         font-size: 1.8rem;
     }
 
-    .btn-watch {
+    .btn-primary {
         width: 100%;
     }
 
-    .container-user {
+    .profile-grid {
         grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .profile-add-btn {
+        width: 100%;
+        max-width: 320px;
     }
 }

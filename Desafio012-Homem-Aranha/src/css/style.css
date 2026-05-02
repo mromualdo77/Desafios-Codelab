@@ -15,8 +15,8 @@ body {
 
     background-image: url("../image/background.svg");
     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-spider {
@@ -107,7 +107,7 @@ body {
     margin: 132px 0 0 0;
     gap: 2rem;
     height: auto;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 100%;
 }
 
@@ -130,21 +130,5 @@ body {
 
 .detail-item p {
     color: var(--color-text);
-    font: 500 0.8rem/100% "Plus Jakarta Sans", sans-serif;
-}
-
-/* ====== RESPONSIVIDADE ====== */
-@media (max-width:1024px) {
-    .content-area {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-spider p {
-        margin: 0 auto;
-    }
-
-    .spider-main {
-        order: -1;
-    }
+    font: 500 1.2rem/100% "Plus Jakarta Sans", sans-serif;
 }

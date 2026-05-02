@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Responsividade para telas de até 1024px (tablets) */
+@media (max-width: 1024px) {
+    .header-spider {
+        padding: 0.5rem ;
+        justify-content: space-around;
+        width: 100%;
+        height: 80px;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .content-area {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .content-area .image-miles-spider {
+        width: 60%;
+        max-width: 600px;
+        height: auto;
+        margin: 50px auto 0;
+    }
+
+    .info-spider {
+        margin-top: 5rem;
+        margin-left: 0;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .info-spider p {
+        font-size: 14px;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .btn-ticket {
+        margin-top: 2rem;
+        padding: 0.8rem;
+        font-size: 14px;
+    }
+
+    .details {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.2rem;
+        padding: 1rem;
+        margin-top: 80px;
+    }
+
+    .detail-item {
+        margin-left: 150px;
+        width: 70%;
+        height: 100%;
+        gap: 0.5rem;
+    }
+
+    .detail-item h1 {
+        font-size: 1.1rem;
+    }
+
+    .detail-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade para telas de até 768px (celulares) */
+@media (max-width: 768px) {
+    .header-spider {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo-spider {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .content-area .image-miles-spider {
+       
+        width: 80%;
+        max-width: 400px;
+        height: auto;
+        margin: 50px auto 0;
+    }
+
+    .info-spider { 
+        margin-top: 5rem;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .info-spider p {
+        font-size: 13px;
+        line-height: 150%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .btn-ticket {
+        margin-top: 1.5rem;
+        padding: 0.7rem;
+        font-size: 13px;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding:1rem 7rem;
+        margin-top: 40px;
+    }
+
+    .detail-item {
+        margin-left: 0;
+        width: auto;
+        height: auto;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .detail-item h1 {
+        font-size: 1rem;
+    }
+
+    .detail-item p {
+        font-size: 0.9rem;
+    }
+}

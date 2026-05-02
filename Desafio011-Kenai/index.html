@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header class="film-header">
-        <h1 class="logo">Kenai</h1>
-        <nav class="kenai-nav" aria-label="Menu principal">
+    <header class="header">
+        <h1 class="brand-logo">Kenai</h1>
+        <nav class="main-nav" aria-label="Menu principal">
             <a href="#" aria-label="Buscar conteúdo"><img src="./src/image/button-search.svg" alt="Ícone de busca"></a>
-            <ul class="nav-links">
+            <ul class="nav-list">
                 <li><a href="#">Início</a> </li>
                 <li><a href="#">Minha lista</a></li>
             </ul>
@@ -30,12 +30,12 @@
         <!-- ================= TELA 1 — CATÁLOGO DE FILMES ================= -->
         <section class="screen screen-home" id="screen-home">
 
-            <article class="featured-film ">
-                <header class="presentation">
-                    <p class="film-catergory">Ação/Aventura</p>
+            <article class="hero">
+                <header class="hero-meta">
+                    <p class="hero-category  movie-category">Ação/Aventura</p>
 
-                    <div class="frame-star">
-                        <p class="film-rating" aria-label="Avaliação: 5 de 5 estrelas">
+                    <div class="rating-row">
+                        <p class="rating" aria-label="Avaliação: 5 de 5 estrelas">
                             <img src="./src/image/Star.svg" alt="svg de estrela de classificação">
                             <img src="./src/image/Star.svg" alt="svg de estrela de classificação">
                             <img src="./src/image/Star.svg" alt="svg de estrela de classificação">
@@ -43,29 +43,29 @@
                             <img src="./src/image/Star.svg" alt="svg de estrela de classificação">
                         </p>
 
-                        <span class="movie-timer" role="timer">
-                            <img src="./src/image/Clock.svg" alt=" Duração">
+                        <span class="hero-duration" role="timer">
+                            <img src="./src/image/Clock.svg" alt="Duração">
                             1h 57m
                         </span>
                     </div>
                 </header>
 
-                <div class="details">
-                    <h2 class="film-title">Batman</h2>
-                    <p class="film-description">Gotham City enfrentar uma nova ameaça, e Bruce Wayne assume o papel
+                <div class="hero-details">
+                    <h2 class="hero-title">Batman</h2>
+                    <p class="hero-description">Gotham City enfrentar uma nova ameaça, e Bruce Wayne assume o papel
                         do Cavaleiro das Trevas
                         para deter uma organização criminosa. Em meio a seus próprios demônios internos, Wayne luta
                         para salvar a cidade iminente escruridão eterna.</p>
-                    <button class="btn-watch" type="button">Assistir agora</button>
+                    <button class="btn-primary" type="button">Assistir agora</button>
                 </div>
             </article>
 
-            <section class="list-film" aria-labelledby="section-film-list">
+            <section class="movie-list" aria-labelledby="section-film-list">
                 <figure>
                     <img src="./src/image/image-1.png" alt="Banner do filme Shang-Chi">
                     <figcaption>
-                        <p class="classification">Ação/Suspense</p>
-                        <p class="film-rating" aria-label="Avaliação: 5 estrela">
+                        <p class="movie-category">Ação/Suspense</p>
+                        <p class="rating" aria-label="Avaliação: 5 estrela">
                             <img src="./src/image/Star-light.svg" alt="classificação de filmes mais bem avaliados">
                             <img src="./src/image/Star-light.svg" alt="classificação de filmes mais bem avaliados">
                             <img src="./src/image/Star-light.svg" alt="classificação de filmes mais bem avaliados">
@@ -76,12 +76,12 @@
                     </figcaption>
                 </figure>
 
-                <a href="#" class="film-card">
+                <a href="#" class="movie-card">
                     <figure>
                         <img src="./src/image/image-2.png" alt="Banner do filme Wish Dragon">
                         <figcaption>
-                            <p class="classification">Aventura/Fantasia</p>
-                            <p class="film-rating" aria-label="Avaliação: 5 de 5 estrela">
+                            <p class="movie-category">Aventura/Fantasia</p>
+                            <p class="rating" aria-label="Avaliação: 5 de 5 estrela">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
@@ -93,12 +93,12 @@
                     </figure>
                 </a>
 
-                <a href="#" class="film-card">
+                <a href="#" class="movie-card">
                     <figure>
                         <img src="./src/image/image-3.png" alt="Banner do filme Loki">
                         <figcaption>
-                            <p class="classification">Ação/Ficção</p>
-                            <p class="film-rating" aria-label="Avaliação: 5 estrela">
+                            <p class="movie-category">Ação/Ficção</p>
+                            <p class="rating" aria-label="Avaliação: 5 estrela">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
@@ -110,12 +110,12 @@
                     </figure>
                 </a>
 
-                <a href="#" class="film-card">
+                <a href="#" class="movie-card">
                     <figure>
                         <img src="./src/image/image-4.png" alt="Banner do filme spider-man">
                         <figcaption>
-                            <p class="classification">Ação</p>
-                            <p class="film-rating" aria-label="Avaliação: 5 estrela">
+                            <p class="movie-category">Ação</p>
+                            <p class="rating" aria-label="Avaliação: 5 estrela">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
@@ -127,12 +127,12 @@
                     </figure>
                 </a>
 
-                <a href="#" class="film-card">
+                <a href="#" class="movie-card">
                     <figure>
                         <img src="./src/image/image-5.png" alt="Banner do filme the witcher">
                         <figcaption>
-                            <p class="classification">Ação/Fantasia</p>
-                            <p class="film-rating" aria-label="Avaliação: 5 estrela">
+                            <p class="movie-category">Ação/Fantasia</p>
+                            <p class="rating" aria-label="Avaliação: 5 estrela">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
                                 <img src="./src/image/Star-light.svg" alt="Classificação dos filmes mais bem avaliados">
@@ -148,36 +148,36 @@
 
 
         <!--==== TELA PERFIL DO USUÁRIO =====-->
-        <section class="screen  hidden content-user" id="screen-profile">
-            <header class="logo-user">
-                <h2 class="logo">Kenai</h2>
+        <section class="screen hidden profile-screen" id="screen-profile">
+            <header class="profile-header">
+                <h2 class="profile-brand">Kenai</h2>
                 <p>10:43 PM</p>
             </header>
 
-            <section class="screen-profile">
-                <div class="header-user profile-header">
-                    <h3>Bem-vindo de volta ao Kenai</h3>
-                    <p>Quem está usando?</p>
-                </div>
+            <!-- <div class="screen-profile"> -->
+            <div class="profile-welcome">
+                <h3>Bem-vindo de volta ao Kenai</h3>
+                <p>Quem está usando?</p>
+            </div>
 
-                <div class="container-user">
-                    <a href="#" class="avatar-card" aria-label="Seleciona perfil do usuário">
-                        <img src="./src/image/1.svg" alt="Avatar de usuário">
-                        <p>Matheus Ramos</p>
-                    </a>
+            <div class="profile-grid">
+                <a href="#" class="profile-card" aria-label="Seleciona perfil do usuário">
+                    <img src="./src/image/1.svg" alt="Avatar de usuário">
+                    <p>Matheus Ramos</p>
+                </a>
 
-                    <a href="#" class="avatar-card" aria-label="Selecionar perfil do usuário">
-                        <img src="./src/image/2.svg" alt="Avatar de usuário">
-                        <p>Vitória Luz</p>
-                    </a>
+                <a href="#" class="profile-card" aria-label="Selecionar perfil do usuário">
+                    <img src="./src/image/2.svg" alt="Avatar de usuário">
+                    <p>Vitória Luz</p>
+                </a>
 
-                    <a href="#" class="avatar-card" aria-label="Selecionar perfil do usuário">
-                        <img src="./src/image/3.svg" alt="Avatar de usuário">
-                        <p>Vinicius Eiji</p>
-                    </a>
-                </div>
-                <button class="button-add" type="button" aria-label="Adicionar novo usuário"> Adicionar perfil</button>
-            </section>
+                <a href="#" class="profile-card" aria-label="Selecionar perfil do usuário">
+                    <img src="./src/image/3.svg" alt="Avatar de usuário">
+                    <p>Vinicius Eiji</p>
+                </a>
+            </div>
+            <!-- </div> -->
+            <a class="profile-add-btn" type="button" aria-label="Adicionar novo usuário"> Adicionar perfil</a>
         </section>
     </main>
 </body>
