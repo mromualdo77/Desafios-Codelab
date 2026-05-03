@@ -40,8 +40,13 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
+    .experience p {
+        margin-left: 215px;
+        width: 650px;
+    }
+
     .about p {
-        margin: 40px auto;
+        margin: 30px auto;
         text-align: center;
     }
 
@@ -50,17 +55,37 @@
         justify-content: center;
         gap: 25px;
     }
+
+    .btn-curriculum {
+        margin: auto;
+        padding: 25px 0 0 0;
+    }
 }
 
 /* Celulares (até 768px) */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .header,
+    .about,
+    .experience,
+    .projetos {
+        padding: 40px 0;
+        width: 132%;
+    }
+
     .nav-links {
         flex-direction: column;
         gap: 12px;
         align-items: center;
     }
 
-    .btn-primary, .btn-secondary, .btn-outline {
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
         padding: 10px 30px;
         margin: 20px 10px 0;
     }
@@ -98,36 +123,60 @@
     }
 }
 
-/* Celulares pequenos (até 480px) */
+
+
 @media (max-width: 480px) {
-    .logo {
-        font-size: 1.2rem;
+
+    *{
+        box-sizing: border-box;
     }
 
-    .hero-image img {
-        width: 150px;
+    body{
+        overflow-x: hidden;
     }
 
-    .btn-primary, .btn-secondary, .btn-outline {
-        padding: 8px 20px;
-        font-size: 0.9rem;
+    .container{
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .title-experience {
+    .experience{
+        padding: 60px 0;
+    }
+
+    .title-experience{
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    .company-info h3{
         font-size: 1.5rem;
+        padding: 20px 0;
     }
 
-    .about p {
-        font-size: 0.9rem;
-        width: 90%;
+    .experience p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 0.95rem;
+        line-height: 1.8;
+        text-align: center;
+        display: block;
     }
 
-    .links-social {
-        flex-direction: row;
-        gap: 20px;
+    .skills{
+        width: 100%;
+        height: auto;
+        margin: 30px 0 0 0;
+        padding: 20px;
+        border-left: none;
+        border-top: 2px solid #a855f7;
     }
 
-    .project-card h3 {
-        font-size: 1.1rem;
+    .skills a{
+        margin: 18px 0;
+        justify-content: center;
+        align-items: center;
     }
+
 }
