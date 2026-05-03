@@ -38,5 +38,8 @@ A página é responsiva e se adapta a telas de:
 ## Licença
 Este projeto é de uso pessoal e educacional. Sinta-se à vontade para contribuir ou modificar.
 
-## Autor
-Criado por [Seu Nome].
+## 👩‍💻 Autoria
+
+Desenvolvido por [Maria Romualdo](#).
+
+Desafio proposto por [iuricode/desafios-frontend](https://github.com/iuricode/desafios-frontend).
