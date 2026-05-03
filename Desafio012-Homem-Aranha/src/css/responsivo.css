@@ -3,7 +3,7 @@
 /* Responsividade para telas de até 1024px (tablets) */
 @media (max-width: 1024px) {
     .header-spider {
-        padding: 0.5rem ;
+        padding: 0.5rem;
         justify-content: space-around;
         width: 100%;
         height: 80px;
@@ -95,14 +95,14 @@
     }
 
     .content-area .image-miles-spider {
-       
+
         width: 80%;
         max-width: 400px;
         height: auto;
         margin: 50px auto 0;
     }
 
-    .info-spider { 
+    .info-spider {
         margin-top: 5rem;
         width: 90%;
         max-width: 400px;
@@ -124,7 +124,7 @@
     .details {
         grid-template-columns: 1fr;
         gap: 1rem;
-        padding:1rem 7rem;
+        padding: 1rem 7rem;
         margin-top: 40px;
     }
 
